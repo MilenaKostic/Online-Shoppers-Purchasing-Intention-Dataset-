@@ -45,12 +45,12 @@ Testirane su tri arhitekture različite dubine i složenosti, od jednostavne, sa
 Svi modeli evaluirani su na istom test skupu koristeći identičan skup metrika - preciznost, odziv, F1-meru, ROC-AUC, radi obezbeđivanja fer i konzistentnog poređenja. 
 
 ## Zaključak, poređenje modela 
-Na osnovu evaluacije na test skupu, ostvareni s
+Na osnovu evaluacije na test skupu, ostvareni su rezultati 
 |Model| ROC-AUC | Precision | Recall | F1-Score|
 |-----|---------|-----------|--------|---------|
-|Logisticka regresija (SMOTE)| 0.892 | 0.72| 0.37 | 0.49|
+|Logisticka regresija (SMOTE)| 0.901 | 0.527| 0.738 | 0.615|
 |Random Forest| 0.921| 0.74 | 0.51| 0.60|
-|Neuronska mreza| 0.908 | 0.71| 0.52 | 0.60|
+|Neuronska mreza| 0.909 | 0.705| 0.53 | 0.60|
 
 Random Forest je pokazao najbolje sveukupne performanse, sa najvišim ROC-AUC i najboljim odzivom, uz zadržavanje visoke preciznosti. To znači da najpouzdanije prepoznaje stvarne kupce bez velikog broja pogrešnih pozitivnih predikcija. 
 Dodatno, mera važnosti atributa (feature_importances_) dobijena ovim modelom u potpunosti se poklopila sa nezavisnom korelacionom analizom sprovedenom u uvodu, čime je potvrđena njena pouzdanost.
@@ -62,9 +62,9 @@ Logistička regresija je kao linearni model, pokazala primetno slabije rezultate
 Na osnovu sprovedene analize, Random Forest je izabran kao najpogodniji model za predviđanje namere kupovine korisnika na ovom skupu podataka, uzimajući u obzir kako prediktivne performanse, tako i jednostavnost pripreme podataka. 
 
 ## Literatura 
-[1] Online Shoppers Purchasing Intention Dataset: https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset 
-[2] Mašinsko učenje, Mladen Nikolić i Anđelka Zečević, Beograd 2019.
-[3] Mašinsko učenje, Izvodi sa vežbi 
-[4] Pang-Ning Tan, Michael Steinbach, Anuj Karpatne, Vipin Kumar, Introduction to Data Mining, Second Edition, 2019
+[1] Online Shoppers Purchasing Intention Dataset: https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset </br>
+[2] Mašinsko učenje, Mladen Nikolić i Anđelka Zečević, Beograd 2019.</br>
+[3] Mašinsko učenje, Izvodi sa vežbi </br>
+[4] Pang-Ning Tan, Michael Steinbach, Anuj Karpatne, Vipin Kumar, Introduction to Data Mining, Second Edition, 2019 </br> 
 
 
